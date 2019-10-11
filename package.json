@@ -1,0 +1,23 @@
+{
+  "name": "thirdfolio",
+  "version": "1.0.0",
+  "description": "Third portfolio developed by AHP",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AHP",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.4",
+    "bootstrap": "^4.3.1",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "jquery": "^3.4.1"
+  }
+}
