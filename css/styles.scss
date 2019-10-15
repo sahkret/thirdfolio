@@ -12,11 +12,7 @@ $primeClr: #e9ecef;
 
 // ---Mixins---
 
-@mixin mq($size){
-  @media only screen and (min-width: $size){
-    @content;
-  }
-}
+
 
 // ---CSS---
 
