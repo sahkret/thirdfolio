@@ -2,7 +2,7 @@
   "name": "thirdfolio",
   "version": "1.0.0",
   "description": "Third portfolio developed by AHP",
-  "main": "index.html",
+  "main": "../index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
