@@ -4,40 +4,16 @@
 // ---Imports---
 
 @import "../resources/scss/media";
+@import "../resources/scss/hover-effs";
 
 // ---Variables---
 
-$bgClr: #ced4da;
+$bgClr: #dfe5eb;
 $primeClr: #e9ecef;
 
 // ---Mixins---
 
-@mixin snake{
-  .fancy-link{
-    text-decoration: none;
-    color: #ee6352;
-    position: relative;
-  }
 
-  .fancy-link::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: currentColor;
-
-    transform: scaleX(0.16);
-    transform-origin: right;
-    transition: transform 200ms ease-in;
-  }
-
-  .fancy-link:hover::after{
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-}
 
 // ---CSS---
 

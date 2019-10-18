@@ -1,4 +1,4 @@
-// Snakey links
+// ---Snakey links---
 @mixin snake{
   .fancy-link{
     text-decoration: none;
@@ -26,7 +26,7 @@
   }
 }
 
-// Shifty buttons
+// ---Shifty buttons---
 @mixin btnflash{
   .button {
     cursor: pointer;
@@ -54,6 +54,7 @@
     transition: transform 200ms ease-in;
   }
 
+  // ---Left to Right---
   .button-one::after{
     transform: scaleX(0);
     transform-origin: right;
@@ -64,6 +65,7 @@
     transform-origin: left;
   }
 
+  // ---Top to Bottom---
   .button-two::after{
     transform: scaleY(0);
     transform-origin: bottom;
@@ -74,13 +76,14 @@
     transform-origin: top;
   }
 
+  // ---Top Left to Top Right---
   .button-three::after{
-    transform: scaleX(0);
-    transform-origin: right;
+    transform: scale(0);
+    transform-origin: top right;
   }
 
   .button-three:hover::after{
-    transform: scaleX(1);
-    transform-origin: left;
+    transform: scale(1);
+    transform-origin: top left;
   }
 }
