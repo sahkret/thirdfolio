@@ -161,3 +161,164 @@ body{
     }
   }
 }
+
+@include mq($note){
+  body{
+    .head{
+      a{
+        margin-left: 36.6%;
+      }
+    }
+
+    .content{
+      &__projects{
+        &__wrapper{
+          img{
+            max-height: 8.2rem;
+          }
+          .carousel-caption{
+            right: 37.5%;
+            left: 37.5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mq($inbetween){
+  body{
+    .head{
+      a {
+        margin: 0.5rem 0 0 3vw;
+      }
+      .fa-linkedin,
+      .fa-envelope-square,
+      .fa-github-square{
+        &::before{
+          font-size: 2rem;
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+
+    .content{
+      &__head{
+        &__subtitle{
+          margin-left: 5vw;
+          text-align: left;
+        }
+        &__text{
+          margin: 0 auto 0 60vw;
+          font-size: 1rem;
+        }
+      }
+      &__projects{
+        &__wrapper{
+          img{
+            max-height: 30vh;
+          }
+          .carousel-indicators{
+            bottom: -2.3rem;
+            li{
+              width: 2rem;
+            }
+          }
+          .carousel-caption{
+            right: 38%;
+            left: 38%;
+            bottom: 1.5rem;
+            h5,
+            .fa-github-square::before{
+              font-size: 1.5rem;
+              vertical-align: bottom;
+              line-height: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mq($tablet){
+  body{
+    .content{
+      margin: 0 5%;
+      &__head{
+        margin: 0 auto 10vh;
+        &__title{
+          margin-bottom: 3vh;
+        }
+        &__subtitle{
+          margin: 0 auto 3vh 10vw;
+        }
+        &__text{
+          margin: 0 auto 0 65vw;
+        }
+      }
+      &__projects{
+        &__wrapper{
+          img{
+            max-height: 33vh;
+          }
+          .carousel-caption{
+            right: 42%;
+            left: 42%;
+          }
+          .carousel-control-next,
+          .carousel-control-prev{
+            width: 7%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mq($teneighty){
+  body{
+    .head{
+      margin-bottom: 1vh;
+      a{
+        max-width: 14rem;
+        margin: 0.5rem 0 0 7vw;
+      }
+      .fa-linkedin,
+      .fa-envelope-square,
+      .fa-github-square{
+        &::before{
+          font-size: 2rem;
+        }
+      }
+      li{
+        margin-bottom: 0.2rem;
+      }
+    }
+    .content{
+      &__head{
+        margin: 0 auto 5vh;
+        &__subtitle{
+          margin: 0 auto 1vh 18vw;
+          font-size: 2rem;
+        }
+        &__text{
+          margin: 0 auto 0 50vw;
+          font-size: 1.3rem;
+        }
+      }
+      &__projects{
+        &__wrapper{
+          img{
+            max-height: 40vh;
+          }
+          .carousel-caption{
+            right: 43%;
+            left: 43%;
+            bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
