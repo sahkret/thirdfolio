@@ -5,8 +5,11 @@
 
 // ---Variables---
 
-$bgClr: #dfe5eb;
-$primeClr: #e9ecef;
+$bgClr: rgba(47, 47, 47, 0.9);
+$txtClr: rgba(234, 234, 234, 0.93);
+$drkBlu: #71b3e1;
+$midBlu: #84c4f0;
+$lteBlu: #99d7ff;
 
 // ---Mixins---
 
@@ -22,8 +25,8 @@ $primeClr: #e9ecef;
 }
 
 body{
-  background-color: rgba(47, 47, 47, 0.9);
-  color: rgba(234, 234, 234, 0.93);
+  background-color: $bgClr;
+  color: $txtClr;
 
   .tooltip > .tooltip-inner {
     background-color: #2b2b2b;
@@ -65,28 +68,27 @@ body{
       }
 
       .fa-linkedin{
-        color: #71b3e1;
+        color: $drkBlu;
       }
 
       .fa-envelope-square{
-        color: #84c4f0;
+        color: $midBlu;
       }
 
       .fa-github-square{
-        color: #99d7ff;
+        color: $lteBlu;
       }
     }
   }
 
   .content{
 
-
     &__head{
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       text-align: left;
-      margin: 0.5rem 1rem;
+      margin: 2rem auto;
 
       &__title{
         text-align: center;
@@ -96,7 +98,65 @@ body{
       
       &__subtitle{
         text-align: center;
-        margin-bottom: 2rem;
+      }
+
+      &__text{
+        margin: 0 auto;
+        font-size: 0.8rem;
+      }
+    }
+
+    &__projects{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      margin: 2rem auto;
+
+      &__title{
+        margin: 1rem auto;
+      }
+
+      &__wrapper{
+
+
+        .carousel-indicators{
+          bottom: -2rem;
+
+          li{
+            background-color: $drkBlu;
+          }
+
+          &active{
+            background-color: $lteBlu;
+          }
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev{
+          opacity: 0.1;
+          background-color: #2b2b2b;
+          width: 10%;
+        }
+
+        .carousel-caption{
+          display: flex;
+          flex-flow: row nowrap;
+          right: 30%;
+          left: 30%;
+          bottom: -1.2rem;
+
+          h5{
+            margin-right: 2rem;
+          }
+        }
+
+        img{
+          max-height: 8rem;
+        }
+        
+        a{
+          color: $drkBlu;
+        }
       }
     }
   }
